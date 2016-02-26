@@ -1,0 +1,128 @@
+#column-full {
+ .event-container {
+  h1 {
+  
+  }
+  .alert {
+    font-size:0.9em;
+	padding:10px;
+	text-align: center;
+  }
+  
+  .event-image {
+    border: 1px solid #ccc;
+	background: #f6f6f6;
+	padding:10px;
+    box-shadow: 0 0 7px #cccccc;
+    -moz-box-shadow: 0 0 7px #cccccc;
+    -webkit-box-shadow: 0 0 7px #cccccc;
+	text-align: center;
+	img {
+	  max-height: 230px;
+      max-width: 100%;
+	}
+  }
+  
+  .event-type {
+    margin: 0 0 1.4em 0;
+	border-bottom: @eventBorderSize solid @eventStandardColor;
+    padding-bottom: 2px;
+	display: inline-block;
+  }
+  .event-city {
+    font-size: 1.6em;
+    margin: 0.4em 0;
+  }
+  .event-date {
+    font-size: 1.4em;
+    margin: 0.4em 0;
+	
+	.time {
+	  font-size: 0.75em;
+	  span {
+	    color: #666;
+		font-size: 0.9em;
+	  }
+	}
+	
+  }
+  dd+dt {
+	margin-top: 0.5em;
+  }
+  .event-venue-container {
+  
+    background: #f6f6f6 none repeat scroll 0 0;
+    border: 1px solid #cccccc;
+    box-shadow: 0 0 7px #cccccc;
+    -moz-box-shadow: 0 0 7px #cccccc;
+    -webkit-box-shadow: 0 0 7px #cccccc;
+    margin: 0 0 20px;
+    padding: 10px 20px 20px;
+   
+    .event-venue {
+	  h2 {
+	    font-style: normal;
+		margin: 0 0 0.4em 0;
+		border:0px none;
+		padding: 0;
+		font-size:1.8em;
+		font-weight:normal;
+	  }
+	}
+	.event-venue-address {
+	
+	}
+	
+	.event-venue-map {
+	  position: relative;
+      padding-bottom: 65.25%;
+      padding-top: 30px;
+      height: 0;
+      overflow: hidden;
+	  border: 1px solid #ccc;
+	  margin: 10px 0 0 0;
+	  iframe {
+	    position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	  }
+	}
+  }
+ }
+}
+
+#events-modal {
+	
+  .modal-header {
+	padding: 5px 15px;
+	height: 30px;
+  }
+  h1 {
+	font-size:1.8em;
+	margin-top:0;
+  }
+  .event-image {
+    border: 1px solid #ccc;
+	background: #f6f6f6;
+	padding:10px;
+    box-shadow: 0 0 7px #cccccc;
+    -moz-box-shadow: 0 0 7px #cccccc;
+    -webkit-box-shadow: 0 0 7px #cccccc;
+	text-align: center;
+	img {
+	  max-height: 170px;
+      max-width: 100%;
+	}
+  }
+  
+  .event-date {
+    font-size: 1.2em;
+    margin: 0.4em 0;
+  }
+  
+  .event-info-button {
+	  text-align: center;
+  }
+}

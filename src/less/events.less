@@ -1,0 +1,152 @@
+.event {
+  display: block;
+/*  background-color: @eventStandardColor;
+  width: @eventSize;
+  height: @eventSize; */
+  margin-right: @eventMargin;
+  margin-bottom: @eventMargin;
+/*  -webkit-box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+  border-radius: @eventBorderRadius;
+  border: @eventBorderSize solid @eventBorderColor; */
+  border-bottom: @eventBorderSize solid @eventStandardColor;
+  padding-left: 2px;
+  clear:left;
+}
+
+.event-block {
+  display: block;
+  background-color:  #c3c3c3;
+  width: 20px;
+  height: 100%;
+}
+
+.cal-event-list .event.pull-left {
+  margin-top: 3px;
+}
+
+.event-important, .event-networking {
+  border-color: @eventImportantColor !important;
+}
+
+.event-info, .event-financial {
+  border-color: @eventInfoColor !important;
+}
+
+.event-warning, .event-demo {
+  border-color: @eventWarningColor !important;
+}
+
+.event-inverse, .event-webinar {
+  border-color: @eventInverseColor !important;
+}
+
+.event-success {
+  border-color: @eventSuccessColor !important;
+}
+
+.event-special, .event-conference  {
+  border-color: @eventSpecialColor !important;
+}
+
+
+.day-highlight:hover,
+.day-highlight {
+  background-color: @eventHiliteStandart !important;
+}
+
+.day-highlight.dh-event-important:hover, .day-highlight.dh-event-networking:hover,
+.day-highlight.dh-event-important, .day-highlight.dh-event-networking {
+  background-color: @eventHiliteImportant;
+}
+
+.day-highlight.dh-event-warning:hover, .day-highlight.dh-event-demo:hover,
+.day-highlight.dh-event-warning, .day-highlight.dh-event-demo {
+  background-color: @eventHiliteWarning;
+}
+
+.day-highlight.dh-event-info:hover, .day-highlight.dh-event-financial:hover,
+.day-highlight.dh-event-info, .day-highlight.dh-event-financial {
+  background-color: @eventHiliteInfo;
+}
+
+.day-highlight.dh-event-inverse:hover, .day-highlight.dh-event-webinar:hover,
+.day-highlight.dh-event-inverse, .day-highlight.dh-event-webinar {
+  background-color: @eventHiliteInverse;
+}
+
+.day-highlight.dh-event-success:hover,
+.day-highlight.dh-event-success {
+  background-color: @eventHiliteSuccess;
+}
+
+.day-highlight.dh-event-special:hover, .day-highlight.dh-event-conference:hover,
+.day-highlight.dh-event-special, .day-highlight.dh-event-conference {
+  background-color: @eventHiliteSpecial;
+}
+
+.event-key-container {
+	background: #f6f6f6 none repeat scroll 0 0;
+    border: 1px solid #cccccc;
+    box-shadow: 0 0 7px #cccccc;
+    -moz-box-shadow: 0 0 7px #cccccc;
+    -webkit-box-shadow: 0 0 7px #cccccc;
+    margin: 10px 0;
+    padding: 10px 20px;
+	text-align:center;
+	
+	@media (max-width: 991px) {
+		display:none;
+	}
+}
+
+.event-key {
+	display: inline-block;
+	margin: 0.2em 1em 0.2em;
+	padding: 0 1em 0 0.3em;
+	border-bottom: @eventBorderSize solid @eventStandardColor;
+}
+
+.event-buttons {
+	margin-top: 20px;
+}
+
+#calendar {
+	margin-top: 15px;
+}
+
+#eventlist {
+	.event-container {
+		margin: 20px 0 10px;
+		padding: 10px 20px;
+		border: 1px solid #cccccc;
+		box-shadow: 0 0 7px #cccccc;
+		-moz-box-shadow: 0 0 7px #cccccc;
+		-webkit-box-shadow: 0 0 7px #cccccc;
+		text-align: center;
+	
+		a {
+			color: #000;
+			text-decoration: none;
+		}
+		a:hover {
+			color: #2a6496;
+			text-decoration: none;
+		}
+		
+		.event-image {
+			
+			img {
+				max-height: 170px;
+				width: auto;
+			}
+		}
+		
+	    .event-info-button {
+		  text-align: center;
+		  .btn-primary {
+			color:#fff;  
+		  }
+	    }
+	}
+}

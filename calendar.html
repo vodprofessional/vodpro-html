@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="favicon.png"/>
+
+    <title>Article | VODProfessionals - News, information and updates on everything VOD experience</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet"/>
+	<link href="css/calendar.css" rel="stylesheet"/>
+	
+
+    <!-- GOOGLE FONT -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato|Open+Sans">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!-- Accessibility reasons -->
+    <a href="#content" class="sr-only">Skip to main content</a>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div id="bg1">
+            <div class="container">
+                <div class="row">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">VODProfessional</a>
+
+                    <div class="collapse navbar-collapse">
+                        <ul id="nav-secondary" class="nav navbar-nav">
+                            <li><a href="">Sign In</a></li>
+                            <li><a href="">Register</a></li>
+                            <li class="social"><a href=""><i class="fa fa-twitter"></i></a></li>
+                            <li class="social"><a href=""><i class="fa fa-facebook"></i></a></li>
+                            <li class="social"><a href=""><i class="fa fa-linkedin"></i></a></li>
+                            <li class="social"><a href=""><i class="fa fa-rss"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="bg2">
+            <div class="container">
+                <div class="row">
+                    <div class="collapse navbar-collapse">
+                        <ul id="nav-primary" class="nav navbar-nav">
+                            <li><a href="news.html">News</a></li>
+                            <li><a href="news.html">Features</a></li>
+                            <li><a href="news.html">Research</a></li>
+                            <li><a href="news.html">Jobs</a></li>
+                            <li class="last"><a href="http://www.vodprofessional.com/vui">VUI Library</a></li>
+                        </ul>
+                        <form class="form-inline" role="form">
+                            <div class="form-group">
+                                <label class="sr-only" for="search">Search VODProfessional</label>
+                                <div class="input-group">
+                                    <input id="search" class="form-control" name="search" type="text" placeholder="Search..."/>
+                                    <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main content -->
+    <div id="content" class="container news" >
+        <div id="columns" class="row">
+            <div id="main" class="articles col-xs-12">
+                <div>
+                    <section id="column-full" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 active">
+                            <h2>Event Calendar</h2>
+                            <p>Take a look at the Scandinavian online television industry and you'll see plenty of good things: beautiful user interfaces from Magine, robust internet technologies from Ericsson, innovative TV Everywhere solutions from Xstream and new VOD services from, for example, Com Hem and Ostmodern who together recently launched Cirkus.</p>
+                                <p>These products are being delivered to an increasingly engaged audience. Consider that in Denmark, Netflix already has over 400,000 subscribers; YouSee from the TDC Group has more than 300,000 frequent users; SVT Play welcomes four million unique viewers a week - of which 40% access the service through mobile devices - and VGTV's online video series, Fanthomas, recorded over 18 million views on the platform.</p>
+
+                            <div class="article-main">
+                                
+								
+								
+								<div class="row event-key-container">
+									<div class="col-xs-12">
+										<div class="event-key event-conference">Conference / Exhibition</div>
+										<div class="event-key event-networking">Networking Event</div>
+										<div class="event-key event-financial">Financial Results</div>
+										<div class="event-key event-product">Product Demonstration</div>
+										<div class="event-key event-webinar">Webinar</div>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col col-xs-12 col-sm-4">
+										<h3 class="calendar-title"></h3>
+									</div>
+									<div class="col-xs-12 col-sm-8 ">
+										<div class="btn-group pull-right-sm event-buttons">
+											<button class="btn btn-primary" data-calendar-nav="prev"><< Previous Month</button>
+											<button class="btn btn-default" data-calendar-nav="today">Today</button>
+											<button class="btn btn-primary" data-calendar-nav="next">Next Month >></button>
+										</div>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col col-xs-12">
+										<div id="calendar"></div>
+										<div id="eventlist">
+											<div class="event-container">
+												<h1>Event Title</h1>
+												<div class="event-type event-conference">Conference / Exhibition</div>
+												
+											</div>
+										
+										</div>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col col-xs-12">
+										<div class="btn-group pull-right-sm event-buttons event-buttons--bottom">
+											<button class="btn btn-primary" data-calendar-nav="prev"><< Previous Month</button>
+											<button class="btn btn-default" data-calendar-nav="today">Today</button>
+											<button class="btn btn-primary" data-calendar-nav="next">Next Month >></button>
+										</div>
+									</div>
+								</div>
+
+							</div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div id="footer-logo" class="row">
+                <div class="container">
+                    <div id="footer-logo-placeholder"></div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div id="footer-links" class="row">
+                <div class="container">
+                    <a href="#">About VODProfessional</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="#">Contact Us</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="#">Terms and Conditions</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+            <div id="footer-copyright" class="row">
+                &copy; VODProfessionals 2014. All rights reserved.
+            </div>
+        </div>
+    </footer>
+	<div class="modal fade" id="events-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				</div>
+				<div class="modal-body"></div>
+			</div>
+		</div>
+	</div>
+    <!-- The deferred JavaScript -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/underscore-min.js"></script>	
+    <script type="text/javascript" src="js/calendar.js"></script>
+	<script type="text/javascript" src="js/moment.min.js"></script>
+	<!--<script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>-->
+	<script type="text/javascript" src="js/jquery.datetimepicker.full.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript">
+(function($) {
+
+	var brk = 800;
+	
+	function isBelowBreakPoint() {
+		if ($('#calendar').parent().outerWidth() <= brk){
+			$('#calendar').addClass('hidden');
+			$('#eventlist').removeClass('hidden');
+			return true;
+		}
+		else {
+			var reRender = false;
+			if($('#calendar').hasClass('hidden')) {
+				 reRender= true;
+			}
+			$('#calendar').removeClass('hidden');
+			if (reRender) calendar._render();
+			$('#eventlist').addClass('hidden');		
+			$('.event-buttons--bottom').removeClass('hidden');
+			return false;
+		}
+	}
+	
+	
+    //$('#promotion').remove();
+    //$('#main').removeClass().addClass('xs-col-12')
+    $('[data-toggle="popover"]').popover()
+	
+	var options = {
+		events_source: [
+		  {
+            "id": 292,
+            "title": "IBC 2015",
+			"description": "The biggest VOD conference in EMEA",
+            "url": "http://www.vodprofessional.com/features/ibc-review-2015/",
+			"img_url": "http://www.vodprofessional.com/media/782572/ibclogo340.jpg",
+            "class": "event-conference",
+			"type": "Conference / Exhibition",
+            "start": 1441962000000, // Milliseconds
+            "end":   1442415600000 // Milliseconds
+		  },
+          {
+            "id": 293,
+            "title": "Event that has a long title that pushes things down a bit",
+			"description": "This is a test to see whether an extra field can be adde or if it goes wrong",
+            "url": "http://example.com",
+			"img_url": "http://placehold.it/340x210",
+            "class": "event-important",
+			"type": "Conference / Exhibition",
+            "start": 1443516863368, // Milliseconds
+            "end":   1443517000000 // Milliseconds
+          },{
+            "id": 294,
+            "title": "Multi-day event",
+            "url": "http://example.com",
+			"img_url": "http://placehold.it/340x210",
+            "class": "event-warning",
+			"type": "Conference / Exhibition",
+            "start": 1443516863368, // Milliseconds
+            "end":   1443719000000 // Milliseconds
+          },{
+            "id": 295,
+            "title": "Another event. This one has a ridiculously_long_word in it",
+            "url": "http://example.com",
+            "class": "event-special",
+			"type": "Conference / Exhibition",
+            "start": 1443719600000, // Milliseconds
+            "end":   1443720000000 // Milliseconds
+          },{
+            "id": 296,
+            "title": "Event that has a short title ",
+            "url": "http://example.com",
+			"img_url": "http://placehold.it/340x210",
+            "class": "event-conference",
+			"type": "Conference / Exhibition",
+            "start": 1443721000000, // Milliseconds
+            "end":   1443722000000 // Milliseconds
+          }],
+		view: 'month',
+		tmpl_path: 'tmpls/',
+		tmpl_cache: false,
+		// day: '2013-03-12',
+		onAfterEventsLoad: function(events) {
+			
+			if(!events) {
+				return;
+			}
+			
+			var startDate = this.getStartDate().getTime();
+			var endDate = this.getEndDate().getTime();
+			
+			// Check below break points
+			isBelowBreakPoint();
+			
+			var list = $('#eventlist');
+			list.html('');
+			
+			var thisMonthsEvents = $.grep(events, function(evt) {
+				return (parseInt(evt.start) >=  startDate && parseInt(evt.start) <=  endDate) || (parseInt(evt.end) >=  startDate && parseInt(evt.end) <=  endDate);
+			});
+			
+			if(thisMonthsEvents.length == 0 && $('#calendar').hasClass('hidden')) {
+				$('.event-buttons--bottom').addClass('hidden');
+				$(document.createElement('div'))
+					.addClass('event-container')
+					.html('<h4>No events this month</h4>')
+					.appendTo(list);
+			}
+			else {
+				$('.event-buttons--bottom').removeClass('hidden');
+			}
+			
+			var dateStr = '';
+			$.each(thisMonthsEvents, function(key, event) {
+			
+				event.date_start = new Date(parseInt(event.start));
+				event.date_end = new Date(parseInt(event.end));
+				var startDate = event.date_start.getDate() + ' ' + monthFromDate(event.date_start.getMonth()) + ' ' + event.date_start.getFullYear() + ' at ' + leadingZero(event.date_start.getHours()) + ':' + 	leadingZero(event.date_start.getMinutes());
+				
+				var endDate = event.date_end.getDate() + ' ' + monthFromDate(event.date_end.getMonth()) + ' ' + event.date_end.getFullYear() + ' at ' + leadingZero(event.date_end.getHours()) + ':' + 			 	leadingZero(event.date_end.getMinutes());
+				
+				if (event.date_start.getDate() + '/' +event.date_start.getMonth() + '/' + event.date_start.getFullYear() == event.date_end.getDate() + '/' + event.date_end.getMonth() + '/' + event.date_end.getFullYear()) {
+					endDate = leadingZero(event.date_end.getHours()) + ':' + leadingZero(event.date_end.getMinutes());
+				}
+				
+			
+				var str = '';
+				str += '<div class="event-date">' + startDate + ' - ' + endDate + '</div>'
+				str += '<div class="event-type "' + event.class + '>' + event.type + '</div>';
+				str += '<h3>' + event.title + '</h3>';
+				if(event.img_url) {
+					str += '<div class="event-image"><img src="'+event.img_url+'"/></div>';
+				}
+				str += '<p>';
+				if(event.description) {
+					str += event.description;
+				}
+				str += '</p>';
+				str += '<div class="event-info-button"><a href="' + event.url + '" class="btn btn-primary"><i class="icon-calendar"></i> More info</a></div>';
+				$(document.createElement('div'))
+					.addClass('event-container')
+					.html(str)
+					.appendTo(list);
+				
+			});
+			
+			
+		},
+		onAfterViewLoad: function(view) {
+			$('.calendar-title').text(this.getTitle());
+			$('.btn-group button').removeClass('active');
+			$('button[data-calendar-view="' + view + '"]').addClass('active');
+			
+			// Resize Grid Elements.
+			var rows = $('.cal-row-fluid');
+			$.each(rows, function(key, val){
+				var row = $(this);
+				var events = row.find('.events-list');
+				if(events.length > 0) {
+					var cells = row.children('.cal-cell');
+					var h = row.outerHeight(true);
+					$.each(cells, function (k, v) {
+						var cell = $(this).children().first();
+						cell.outerHeight(h);
+					})
+				}
+			});			
+			
+		},
+		classes: {
+			months: {
+				general: 'label'
+			}
+		},
+		modal: '#events-modal',
+		modal_type: 'template',
+		weekbox: false
+	};
+
+	var calendar = $('#calendar').calendar(options);
+
+	$('.btn-group button[data-calendar-nav]').each(function() {
+		var $this = $(this);
+		$this.click(function() {
+			calendar.navigate($this.data('calendar-nav'));
+		});
+	});
+
+	/*$('.btn-group button[data-calendar-view]').each(function() {
+		var $this = $(this);
+		$this.click(function() {
+			calendar.view($this.data('calendar-view'));
+		});
+	});
+*/
+	$('#first_day').change(function(){
+		var value = $(this).val();
+		value = value.length ? parseInt(value) : null;
+		calendar.setOptions({first_day: value});
+		calendar.view();
+	});
+
+
+	$('#events-modal .modal-header, #events-modal .modal-footer').click(function(e){
+		//e.preventDefault();
+		//e.stopPropagation();
+	});
+	
+	$(window).resize(function() {
+		
+		if(!isBelowBreakPoint()) {	
+			var rows = $('.cal-row-fluid');
+			$.each(rows, function(key, val){
+				var row = $(this);
+				var events = row.find('.events-list');
+				if(events.length > 0) {
+					var cells = row.children('.cal-cell');
+					var h = row.outerHeight(true);
+					$.each(cells, function (k, v) {
+						var cell = $(this);
+						cell.outerHeight(h);
+					})
+				}
+			});
+		}
+	});
+}(jQuery));	
+	</script> 
+</body>
+</html>

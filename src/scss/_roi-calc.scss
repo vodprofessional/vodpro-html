@@ -1,0 +1,151 @@
+#ROICalc {
+
+
+	input {
+
+		text-align: right;
+		border: 0px none;
+		border: 2px solid #ddd;
+		padding: 5px inherit;
+		width: 81px;
+
+		&.inputtype-percentage {
+			padding-right:18px;
+			background: #fff url(../img/percent.png) right 2px center no-repeat;
+			background-size: 14px 14px;
+		}
+		&.inputtype-user {
+			background-color: #fff;
+			border: 2px solid #0f0;
+			&.inputtype-user--conjecture {
+				border: 2px solid #f90;
+			}
+		}
+	}
+
+  div.table-container {
+  	border: 1px solid #eee;
+  	margin: 15px 5px 30px;
+  	padding: 10px;
+  	-webkit-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.2);
+    background-color: #faf6f6;
+  }
+  table {
+  	
+  	.story #column-full & { 
+	  margin:0; 
+	}
+  	
+    .story #column-full &.rovi-key {
+    	color: #666;
+    	background-color:#fff9f9;
+    	-webkit-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.2);
+     	-moz-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.2);
+      	box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.2);
+      	border: 1px solid #eee;
+  		margin: 15px 15px 15px 20px;
+  		float:right;
+  		max-width: 
+  		td {
+  			padding: 5px;
+  		}
+  		div {
+  			padding: 3px 5px;
+  			background-color: #fff;
+  			border: 2px solid;
+  			&.customer-input {
+  				border-color: #0f0;
+  			}
+  			&.conjecture-input {
+  				border-color: #f90;
+  			}
+  		}
+    }
+
+  	&.smaller {
+  		width:inherit;
+  		td, th {
+  			width:inherit;
+  		}
+  	}
+	tr {
+		&:first-child {
+			vertical-align: bottom;
+		}
+		&:not(:first-child) {
+			td, th {
+				/*border-top: 1px solid #eee;			*/	
+			}
+		}
+		&.results {
+			td, th {
+				/*border-top: 2px solid #666;
+				border-bottom: 2px solid #666;*/
+				font-weight: 700;
+				input {
+					font-weight: 700;
+				}
+			}
+		}
+
+		td, th {
+			padding: 5px 5px;
+		}
+		th {
+			width:30%;
+			padding-right: 27px;
+			position: relative;
+
+			span.rovi-info {
+				display: inline-block;
+				cursor: pointer;
+				background-color: #f90;
+				-webkit-border-radius: 16px;
+				-moz-border-radius: 16px;
+				border-radius: 16px;
+				color: #fff;
+				font-weight: bold;
+				font-family: serif;
+			    font-size: 1.4em;
+			    font-style: italic;
+			    line-height: 1em;
+			    padding: 2px 9px 0;
+			    position:absolute;
+			    top: 3px;
+			    right:0;
+			}
+			.popover {
+				min-width:250px;
+
+				h3 {
+					font-weight: bold;
+					font-size: 15px;
+					font-style: none;
+				}
+				.popover-content {
+					font-weight: normal;
+				}
+			}
+		}
+		td {
+			text-align: center;
+			width: 12%; 
+			&.right {
+				text-align: right;
+			}
+			&.period {
+				text-align: right;
+				width: 8%;
+			}
+
+			@media (max-width: 992px) { 
+				&.sm-hidden { display:none; }
+			}
+
+		}
+
+	}
+  }
+}
