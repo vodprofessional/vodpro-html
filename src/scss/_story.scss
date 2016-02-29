@@ -35,10 +35,10 @@
     font-size: 1.3em;
   }
   
-  table 
-  {
+  table {
     margin: 2em 0;
     width: 100%;
+	
   }
   table.table-dotted-border {
       border-top: $dotted-border;
@@ -59,6 +59,44 @@
         padding-right:2em;
       }
   }
+  table.table-numeric-cells {
+	thead {
+	  tr {
+	    background-color: #3276b1;
+		color: #fff; 
+	  }
+	}
+	tr {
+	  td {
+		text-align: centre;
+		&.negative {
+		  color: #c00;
+		}
+		&.total {
+		  font-weight: bold;
+		  font-style: italic;
+		}
+	  }
+	  &.results {
+		background-color: $lg-bg;
+		td {
+		  font-weight: bold;
+		  font-style: italic;
+		}
+	  }
+    }	
+  }
+  table.table-compact-text {
+	tr {
+	  th {
+		font-size:0.9em;
+	  }
+	  td {
+		font-size:0.8em;
+	  }
+	}
+  }
+  
   p.indent {
     margin-left: 25px;
   }
